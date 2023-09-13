@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to CodeIgniter 4!</title>
+    <title>Welcome to CodeIgniter 4! tickets</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/favicon.ico">
@@ -220,7 +220,7 @@
 
     <div class="heroe">
 
-        <h1>Welcome to CodeIgniter <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
+        <h1>Welcome to CodeIgniter tic <?= CodeIgniter\CodeIgniter::CI_VERSION ?></h1>
 
         <h2>The small framework with powerful features</h2>
 
@@ -278,7 +278,7 @@
              Contribute
         </h2>
 
-        <p> <?php  print_r($data[0]) ?>CodeIgniter is a community driven project and accepts contributions
+        <p>CodeIgniter is a community driven project and accepts contributions
              of code and documentation from the community. Why not
              <a href="https://codeigniter.com/contribute" target="_blank">
              join us</a> ?</p>
