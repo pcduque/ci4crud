@@ -20,11 +20,18 @@ class Tickets extends BaseController
         return view('reports', $data); 
     }
 
-    public function checkdb(): string
+    public function checkdb()
     {
         $db = \Config\Database::connect();
         $query = $db->query("select * from users");
         $data['data'] = $query->getResult();
-        return view('welcome_message',$data);
+        $out = json_encode($data['data']); //to json
+        header('Content-type: application/json');
+        header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Methods: GET");
+        header("Access-Control-Allow-Methods: GET, OPTIONS");
+        header("Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding");
+        return $out ;
+        // return view('welcome_message',$data);
     }
 }

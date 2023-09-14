@@ -278,7 +278,7 @@
              Contribute
         </h2>
 
-        <p> <?php  print_r($data[0]) ?>CodeIgniter is a community driven project and accepts contributions
+        <p> <?php ?>CodeIgniter is a community driven project and accepts contributions
              of code and documentation from the community. Why not
              <a href="https://codeigniter.com/contribute" target="_blank">
              join us</a> ?</p>
